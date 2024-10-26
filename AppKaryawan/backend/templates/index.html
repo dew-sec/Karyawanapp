@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Employee Management System</title>
+    <link rel="stylesheet" href="{{ url_for('send_assets', path='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('send_assets', path='css/style.css') }}">
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="welcome-content text-center">
+            <div id="notificationBadge" class="badge"></div>
+            <h1>Welcome to Employee Management System</h1>
+            <p class="lead">Manage your workforce efficiently and effectively</p>
+            <div class="welcome-buttons">
+                <a href="{{ url_for('login_post') }}" class="btn btn-primary btn-lg">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('send_assets', path='js/main.js') }}"></script>
+</body>
+</html>

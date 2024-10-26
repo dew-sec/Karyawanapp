@@ -1,0 +1,87 @@
+.notification-badge {
+    position: relative;
+    top: -10px;
+    right: -5px;
+    padding: 3px 6px;
+    border-radius: 50%;
+    font-size: 0.7em;
+}
+
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    min-width: 300px;
+}
+
+.activity-log {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Styling untuk SVG langsung */
+.icon-container svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor; /* mengikuti warna teks parent */
+}
+
+.icon-container svg:hover {
+    fill: #007bff; /* warna saat hover */
+}
+
+/* Styling untuk SVG sebagai image */
+.icon {
+    width: 24px;
+    height: 24px;
+    filter: invert(0); /* untuk mengubah warna icon jika perlu */
+}
+
+/* Styling untuk SVG sebagai background-image */
+.icon-dashboard {
+    width: 24px;
+    height: 24px;
+    background-image: url('../icons/dashboard.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin-bottom: 8px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-icon {
+    margin-right: 12px;
+    fill: currentColor;
+}
+
+/* Warna aktif */
+.nav-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.nav-link.active .nav-icon {
+    fill: white;
+}

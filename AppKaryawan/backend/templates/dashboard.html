@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Employee Management System</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div id="notificationBadge" class="badge"></div>
+                <img src="assets/images/logo.png" alt="Logo" class="sidebar-logo">
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active">
+                    <a href="dashboard.html">
+                        <svg class="menu-icon"><!-- SVG Dashboard --></svg>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="employee.html">
+                        <svg class="menu-icon"><!-- SVG Employee --></svg>
+                        <span>Employees</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="attendance.html">
+                        <svg class="menu-icon"><!-- SVG Attendance --></svg>
+                        <span>Attendance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tasks.html">
+                        <svg class="menu-icon"><!-- SVG Tasks --></svg>
+                        <span>Tasks</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="btn btn-link sidebar-toggle">
+                    <svg class="menu-icon"><!-- SVG Menu --></svg>
+                </button>
+                <div class="ml-auto d-flex align-items-center">
+                    <div class="user-info">
+                        <span>Welcome, Admin</span>
+                    </div>
+                    <a href="login.html" class="btn btn-outline-danger ml-3">Logout</a>
+                </div>
+            </nav>
+
+            <!-- Dashboard Content -->
+            <div class="container-fluid p-4">
+                <!-- Statistics Cards -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <h5>Total Employees</h5>
+                                <h2>150</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <h5>Present Today</h5>
+                                <h2>142</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <h5>On Leave</h5>
+                                <h2>8</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <h5>Active Tasks</h5>
+                                <h2>25</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activities -->
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Recent Activities</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="activity-list">
+                                    <li>John Doe checked in at 9:00 AM</li>
+                                    <li>New task assigned to Sarah Smith</li>
+                                    <li>Meeting scheduled for 2:00 PM</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Upcoming Events</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="event-list">
+                                    <li>Team Meeting - 2:00 PM</li>
+                                    <li>Project Deadline - Tomorrow</li>
+                                    <li>Monthly Review - Next Week</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
